@@ -1,0 +1,16 @@
+## Where the samples will be written
+save_data: .../run/example
+## Where the vocab(s) will be written
+src_vocab: .../run/example.vocab.src
+tgt_vocab: .../run/example.vocab.tgt
+# Prevent overwriting existing files in the folder
+overwrite: False
+
+# Corpus opts:
+data:
+    corpus_1:
+        path_src: $DATA_DIR/src-train.txt
+        path_tgt: $DATA_DIR/tgt-train.txt
+    valid:
+        path_src: $DATA_DIR/src-val.txt
+        path_tgt: $DATA_DIR/tgt-val.txt
